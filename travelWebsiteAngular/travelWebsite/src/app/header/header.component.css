@@ -1,0 +1,29 @@
+.headerContainer {
+    padding: 12rem 1rem;
+  }
+  
+  .headerContainer h1 {
+    margin-bottom: 1rem;
+    max-width: 700px;
+    font-size: 4rem;
+    font-family: var(--header-font);
+  }
+  
+  .headerContainer h4 {
+    position: relative;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .headerContainer h4::after {
+    position: absolute;
+    content: "";
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 2rem;
+    background-color: var(--white);
+  } 

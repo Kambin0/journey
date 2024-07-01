@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+
+<header>
+<nav>
+  <div class="navBar">
+      <div class="navLogo"><a href="#"> Kearmi.</a></div>
+      <ul class="navLinks">
+          <li class="link dropdown">
+              <a href="#home">Home</a>
+              <ul class="dropdownMenu">
+                  <li class="dropdownLink"><a href="#gallery">Gallery</a></li>
+                  <li class="dropdownLink"><a href="#discover">Discover</a></li>
+                  <li class="dropdownLink"><a href="#about">About</a></li>
+              </ul>
+          </li>
+
+          <li class="link dropdown">
+            <a routerLink="/destination">Destinations</a>
+            <ul class="dropdownMenu">
+                <li class="dropdownLink"><a href="/destination#destinations">Stats</a></li>
+            </ul>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+
+    <div class="sectionContainer headerContainer">
+        <h1> 
+            Destinations
+        </h1>
+        <h4>
+            Share your story.
+        </h4>
+        <button class="headerBtn">
+            <a href="#home">Home page <i class="ri-arrow-right-line"></i></a>
+        </button>
+    </div>
+  </header>
+
+    <section id="destinations">
+    <div class="sectionContainer">
+        <h2 class="sectionHeader">Stats</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Date</th>
+              <th>Days Spent</th>
+              <th>Miles Traveled</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let destination of destinations">
+              <td>{{ destination.location }}</td>
+              <td>{{ destination.date }}</td>
+              <td>{{ destination.daysSpent }}</td>
+              <td>{{ destination.milesTraveled }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</section>

@@ -1,0 +1,54 @@
+.aboutContainer {
+    margin-top: -2rem;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+.aboutFlex {
+    margin: 2rem 0;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--primary-color-light);
+  }
+  
+.aboutCard {
+    flex: 1 1 100px;
+    text-align: center;
+    border-right: 2px solid var(--primary-color);
+  }
+  
+  .aboutCard:last-child {
+    border: none;
+  }
+  
+  .aboutCard h4 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+  }
+  
+  .aboutCard p {
+    font-size: 0.9rem;
+  } 
+
+  .aboutBtn {
+        padding: 0.75rem 1.5rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        color: var(--white);
+        border: 1px solid var(--white);
+        background-color: transparent;
+      }
+
+      .aboutBtn:hover {
+        color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
+      }
