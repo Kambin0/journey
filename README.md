@@ -1,4 +1,4 @@
-#journey
+# journey
 
 This project is a full stack web application that uses angular for the front end, Spring Boot with JAva for the backend, and MySQL for the database.
 
